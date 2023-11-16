@@ -17,5 +17,5 @@ class Post extends Model
         'autor',
         'fecha',
         'contenido',
-    ]; 
+    ];
 }

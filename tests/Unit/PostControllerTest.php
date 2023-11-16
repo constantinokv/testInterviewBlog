@@ -10,7 +10,7 @@ class PostControllerTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function test_it_stores_post_with_all_fields()
+    public function testItStoresPostWithAllFields()
     {
         $data = [
             'titulo' => 'Test Title',
@@ -25,7 +25,7 @@ class PostControllerTest extends TestCase
         $this->assertDatabaseHas('posts', $data);
     }
 
-    public function test_it_requires_title()
+    public function testItRequiresTitle(()
     {
         $response = $this->post('/posts/store', [
             'autor' => 'Test Author',
@@ -36,7 +36,7 @@ class PostControllerTest extends TestCase
         $response->assertSessionHasErrors('titulo');
     }
 
-    public function test_it_requires_content()
+    public function testItRequiresContent()
     {
         $response = $this->post('/posts/store', [
             'titulo' => 'Test Title',

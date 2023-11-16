@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ruleset name="Proyecto Laravel">
+    <description>Conjunto de reglas personalizado para el proyecto Laravel</description>
+    <arg name="basepath" value="."/>
+    <file>./app</file>
+    <file>./tests</file>
+    <file>./routes</file>
+    <file>./tests/Unit</file>
+    <!-- Agrega más directorios o archivos según sea necesario -->
+
+    <rule ref="PSR1"/>
+    <rule ref="PSR2"/>
+</ruleset>
