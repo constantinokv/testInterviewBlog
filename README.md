@@ -53,7 +53,7 @@ Post::factory()->count(10)->create();
 1. Guardar Datos a Nivel HTML
 ```bash
 Accede a http://127.0.0.1:8000/posts/create para agregar un nuevo artículo.
-
+```
 
 2. Obtener Listado de Artículos
 ```bash
